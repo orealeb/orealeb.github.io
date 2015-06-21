@@ -43,14 +43,15 @@
 
     
 
-    
+   <!-- start Mixpanel --><script type="text/javascript">(function(f,b){if(!b.__SV){var a,e,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
+for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=f.createElement("script");a.type="text/javascript";a.async=!0;a.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";e=f.getElementsByTagName("script")[0];e.parentNode.insertBefore(a,e)}})(document,window.mixpanel||[]);
+mixpanel.init("17feb8b034907946a65b3c822f438869");</script><!-- end Mixpanel --> 
 
 </head>
 <body>
 
 
-
-
+<script type="text/javascript">mixpanel.track("Video play");</script>
 
 
 
@@ -100,8 +101,12 @@
             We present you the easiest way to look for something you need nearby.
         </p> 
     <p> <br>
-     <a href="https://itunes.apple.com/us/app/lookin4/id972544487" target="_blank"  class="apple"><img src="img/common/apple.png" height="70" width="200" alt="iOS"></a>
-    <a href="https://play.google.com/store/apps/details?id=com.ionicframework.lookin2" target="_blank" class="android"><img src="img/common/android.png" height="70" width="200" alt="Android"></a>
+     <a href="https://itunes.apple.com/us/app/lookin4/id972544487" target="_blank"  class="apple"><img src="img/common/apple.png" height="70" width="200" alt="iOS">
+     <script type="text/javascript">mixpanel.track("Apple app store logo click");</script>
+    </a>
+    <a href="https://play.google.com/store/apps/details?id=com.ionicframework.lookin2" target="_blank" class="android"><img src="img/common/android.png" height="70" width="200" alt="Android">     
+    <script type="text/javascript">mixpanel.track("Google play store logo click");</script>
+</a>
     </p>    </div>
 </div>
 
@@ -187,6 +192,8 @@
                         <textarea  id="message" class="pure-input-1-2" placeholder="Your message"  style="width: 430px; height: 150px;"></textarea>
 
                         <button type="submit" class="pure-button" >Submit</button>
+                        <script type="text/javascript">mixpanel.track("Form submit");</script>
+
                     </fieldset>
 
                 </form>
@@ -212,15 +219,19 @@
         Lookin4 2015 &#169;
         <a href="https://twitter.com/lookinfour" target="_blank">
             <i class="fa fa-twitter fa-lg" style="color:lightblue"></i> 
+            <script type="text/javascript">mixpanel.track("twitter logo click");</script>
         </a>
         <a href="https://www.facebook.com/pages/Lookin4/1586743621570629?fref=ts" target="_blank">
             <i class="fa fa-facebook fa-lg" style="color:blue"></i> 
+            <script type="text/javascript">mixpanel.track("facebook logo click");</script>
         </a>
         <a href="https://instagram.com/lookinfour" target="_blank">
             <i class="fa fa-instagram fa-lg" style="color:brown"></i>
+            <script type="text/javascript">mixpanel.track("Instagram logo click");</script>
         </a>
         <a href="mailto:orealeb1@gmail.com">
             <i class="fa fa-envelope-o fa-lg" style="color:white"></i>
+            <script type="text/javascript">mixpanel.track("Email logo click");</script>
         </a>        
     </div>
 
