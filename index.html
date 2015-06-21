@@ -189,8 +189,7 @@ mixpanel.init("2bc8907feffce17fd5c8b22563c4a420");</script><!-- end Mixpanel -->
                         <label for="message">Your Message</label>
                         <textarea  id="message" class="pure-input-1-2" placeholder="Your message"  style="width: 430px; height: 150px;"></textarea>
 
-                        <button type="submit" class="pure-button" >Submit</button>
-                        <script type="text/javascript">mixpanel.track("Form submit");</script>
+                        <button type="submit" onclick="formClickTrack();" class="pure-button" >Submit</button>
 
                     </fieldset>
 
@@ -250,6 +249,9 @@ mixpanel.track("Apple app store logo click");
 }
 function googleClickTrack (argument) {
 mixpanel.track("Google play store logo click");
+}
+function submitClickTrack (argument) {
+mixpanel.track("Form submit click");
 }
 </script>
 
